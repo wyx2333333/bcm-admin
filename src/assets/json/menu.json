@@ -1,0 +1,73 @@
+{
+  "status": 1,
+  "MENU_DATA": [{
+      "id": "0",
+      "name": "系统管理",
+      "icon_class": "el-icon-menuicon-desktop",
+      "isSubMenu": true,
+      "childLists": [{
+          "id": "0-1",
+          "name": "用户管理",
+          "icon_class": "el-icon-menuicon-user",
+          "route_path": "/main/system/user",
+          "isSubMenu": false
+        },
+        {
+          "id": "0-2",
+          "name": "节点管理",
+          "icon_class": "el-icon-menuicon-tag",
+          "route_path": "/main/system/node",
+          "isSubMenu": false
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "name": "复制管理",
+      "icon_class": "el-icon-menuicon-file-copy",
+      "route_path": "/main/copy",
+      "isSubMenu": false
+    },
+    {
+      "id": "2",
+      "name": "集群管理",
+      "icon_class": "el-icon-menuicon-cluster",
+      "route_path": "/main/cluster",
+      "isSubMenu": false
+    },
+    {
+      "id": "3",
+      "name": "恢复管理",
+      "icon_class": "el-icon-menuicon-sync",
+      "route_path": "/main/recovery",
+      "isSubMenu": false
+    },
+    {
+      "id": "4",
+      "name": "全服务器保护",
+      "icon_class": "el-icon-menuicon-insurance",
+      "isSubMenu": true,
+      "childLists": [{
+        "id": "4-1",
+        "name": "全服务器迁移",
+        "icon_class": "el-icon-menuicon-swap",
+        "route_path": "/main/protection/migration",
+        "isSubMenu": false
+      }]
+    },
+    {
+      "id": "5",
+      "name": "实用工具",
+      "icon_class": "el-icon-menuicon-wrench",
+      "route_path": "/main/tool",
+      "isSubMenu": false
+    },
+    {
+      "id": "6",
+      "name": "日志管理",
+      "icon_class": "el-icon-menuicon-file-text",
+      "route_path": "/main/log",
+      "isSubMenu": false
+    }
+  ]
+}

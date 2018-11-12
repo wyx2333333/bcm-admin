@@ -1,17 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title>bcm</title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but bcm doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>bcm</title>
+</head>
+<style>
+  @font-face {
+    font-family: 'menufont';
+    /* IE9*/
+    src: url('/webfont/webfont.eot');
+    /* IE6-IE8 */
+    src: url('/webfont/webfont.eot?#iefix') format('embedded-opentype'),
+      /* chrome、firefox */
+      url('/webfont/webfont.woff') format('woff'),
+      /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+      url('/webfont/webfont.ttf') format('truetype'),
+      /* iOS 4.1- */
+      url('/webfont/webfont.svg#webfont') format('svg');
+  }
+
+  .menu-font {
+    font-family: 'menufont' !important;
+    font-size: 15px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    /* -webkit-text-stroke-width: 0.1px; */
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Helvetica Neue', Helvetica, 'PingFang SC',
+      'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
+    font-weight: 400;
+    color: #303133;
+    -webkit-font-smoothing: antialiased;
+    background-color: #ebeef5;
+    font-size: 13px;
+    line-height: 1.42857143;
+    overflow: hidden;
+  }
+</style>
+
+<body>
+  <div id="app"></div>
+</body>
+
 </html>
