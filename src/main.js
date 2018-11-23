@@ -5,12 +5,12 @@ import Vuex from 'vuex'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import App from './App'
-import router from './router/index'
+import router from './router'
 import store from './vuex/store'
 import axios from './common/http'
 import service from './common/service'
 import validateRules from './common/validate'
-import './assets/icon/iconfont.css'
+import '../public/icon/iconfont.css'
 
 Vue.use(ElementUI, Vuex, axios)
 Vue.prototype.$axios = axios

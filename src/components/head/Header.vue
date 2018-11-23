@@ -3,7 +3,7 @@
     <el-container class="container">
       <el-aside width="210px">
         <div class="head-logo">
-          <img src="/img/logo.png">
+          <img src="img/logo.png">
         </div>
       </el-aside>
       <el-main>
@@ -11,7 +11,7 @@
           <span class="menu-font">{{ selectedMenu }}</span>
         </div>
         <div class="head-icon">
-          <img src="/img/avatar.png">
+          <img src="img/avatar.png">
         </div>
         <div class="head-icon">
           <el-tooltip class="item"

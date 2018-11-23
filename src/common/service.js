@@ -47,7 +47,7 @@ const post = (url, params, showLoading, loadingText) => {
 }
 // 获取菜单
 const getMenuData = () => {
-  return get('/json/menu.json', null, false, null)
+  return get('json/menu.json', null, false, null)
 }
 
 export default {
