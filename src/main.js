@@ -10,7 +10,7 @@ import store from './vuex/store'
 import axios from './common/http'
 import service from './common/service'
 import validateRules from './common/validate'
-import '../public/icon/iconfont.css'
+import 'iconfont/iconfont.css'
 
 Vue.use(ElementUI, Vuex, axios)
 Vue.prototype.$axios = axios

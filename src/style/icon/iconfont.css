@@ -1,0 +1,131 @@
+@font-face {
+  font-family: 'iconfont';
+  src: url('~fonts/iconfont.woff') format('woff');
+}
+
+.iconfont {
+  font-family: 'iconfont' !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^='el-icon-menuicon'],
+[class*=' el-icon-menuicon'] {
+  font-family: 'iconfont' !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.el-icon-menuicon-stop:before {
+  content: '\e656';
+}
+
+.el-icon-menuicon-252piechart:before {
+  content: '\e729';
+}
+
+.el-icon-menuicon-delete:before {
+  content: '\e6f2';
+}
+
+.el-icon-menuicon-editor:before {
+  content: '\e6f5';
+}
+
+.el-icon-menuicon-refresh1:before {
+  content: '\e71e';
+}
+
+.el-icon-menuicon-start:before {
+  content: '\e61f';
+}
+
+.el-icon-menuicon-aistubiaokuozhan-:before {
+  content: '\e6be';
+}
+
+.el-icon-menuicon-icon--:before {
+  content: '\e778';
+}
+
+.el-icon-menuicon-info-circle:before {
+  content: '\e77e';
+}
+
+.el-icon-menuicon-play-circle:before {
+  content: '\e781';
+}
+
+.el-icon-menuicon-question-circle:before {
+  content: '\e782';
+}
+
+.el-icon-menuicon-timeout:before {
+  content: '\e783';
+}
+
+.el-icon-menuicon-sync:before {
+  content: '\e786';
+}
+
+.el-icon-menuicon-reload:before {
+  content: '\e788';
+}
+
+.el-icon-menuicon-poweroff:before {
+  content: '\e78d';
+}
+
+.el-icon-menuicon-logout:before {
+  content: '\e78c';
+}
+
+.el-icon-menuicon-setting:before {
+  content: '\e78e';
+}
+
+.el-icon-menuicon-interation:before {
+  content: '\e7a7';
+}
+
+.el-icon-menuicon-user:before {
+  content: '\e7ae';
+}
+
+.el-icon-menuicon-file-text:before {
+  content: '\e7b9';
+}
+
+.el-icon-menuicon-file-copy:before {
+  content: '\e7bc';
+}
+
+.el-icon-menuicon-insurance:before {
+  content: '\e7c1';
+}
+
+.el-icon-menuicon-deploymentunit:before {
+  content: '\e7d2';
+}
+
+.el-icon-menuicon-cluster:before {
+  content: '\e7d7';
+}
+
+.el-icon-menuicon-tag:before {
+  content: '\e7e4';
+}
+
+.el-icon-menuicon-wrench:before {
+  content: '\e7e5';
+}
+
+.el-icon-menuicon-swap:before {
+  content: '\e7f2';
+}
+
+.el-icon-menuicon-desktop:before {
+  content: '\e842';
+}

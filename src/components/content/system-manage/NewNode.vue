@@ -313,8 +313,8 @@ export default {
       .label-title {
         padding-bottom: 5px;
         margin-bottom: 15px;
-        color: #909399;
-        border-bottom: 1px solid #ebeef5;
+        color: $grey;
+        border-bottom: 1px solid $border-3;
       }
     }
     .el-form {

@@ -42,11 +42,11 @@ export default {
   data() {
     return {
       loginForm: {
-        user: 'admin',
-        password: 'admin'
+        user: "admin",
+        password: "admin"
       },
       isLogining: false
-    }
+    };
   },
   watch: {},
   computed: {},
@@ -54,33 +54,33 @@ export default {
     login(formName) {
       this.$refs[formName].validate(valid => {
         if (valid) {
-          this.isLogining = true
+          this.isLogining = true;
           setTimeout(() => {
-            this.isLogining = false
-            sessionStorage.setItem('user', this.loginForm.user)
-            sessionStorage.setItem('password', this.loginForm.password)
+            this.isLogining = false;
+            sessionStorage.setItem("user", this.loginForm.user);
+            sessionStorage.setItem("password", this.loginForm.password);
             this.$router.push({
-              path: '/main'
-            })
+              path: "/main"
+            });
             this.$message({
-              message: '登陆成功！',
+              message: "登陆成功！",
               duration: 1200,
-              type: 'success'
-            })
-          }, 1200)
+              type: "success"
+            });
+          }, 1200);
         } else {
-          console.error('error submit!!')
-          return false
+          console.error("error submit!!");
+          return false;
         }
-      })
+      });
     },
     reset(formName) {
-      this.$refs[formName].resetFields()
+      this.$refs[formName].resetFields();
     }
   },
   created() {},
   mounted() {}
-}
+};
 </script>
 <style lang="scss">
 .mg-top100 {
@@ -91,11 +91,11 @@ export default {
   padding: 10px 30px;
   margin: 30px;
   border-radius: 5px;
-  background: #fff;
+  background: $white;
   border: 1px solid #eaeaea;
   box-shadow: 0 0 25px #cac6c6;
   .login-title {
-    color: #606266;
+    color: $text-2;
     font-size: 20px;
     font-weight: 600;
     margin: 30px auto;

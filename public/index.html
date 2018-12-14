@@ -6,17 +6,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>BCM</title>
   </head>
-  <style>
+  <style lang="scss">
     @font-face {
       font-family: 'menufont';
-      /* IE9*/
-      src: url('/webfont/webfont.eot');
-      /* IE6-IE8 */
-      src: url('/webfont/webfont.eot?#iefix') format('embedded-opentype'),
-        /* chrome、firefox */ url('/webfont/webfont.woff') format('woff'),
-        /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-          url('/webfont/webfont.ttf') format('truetype'),
-        /* iOS 4.1- */ url('/webfont/webfont.svg#webfont') format('svg');
+      src: url('<%= BASE_URL %>fonts/webfont.woff') format('woff');
     }
 
     .menu-font {

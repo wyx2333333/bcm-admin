@@ -51,19 +51,19 @@ export default {
 </script>
 <style lang="scss">
 .menu-wrap {
-  width: 210px;
+  width: $menu-width;
   position: fixed;
   top: 61px;
   bottom: 0;
   left: 0;
   z-index: 999;
-  border-right: 1px solid #dcdfe6;
-  background-color: #f2f6fc;
+  border-right: 1px solid $border-1;
+  background-color: $border-4;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   .menu-title {
     padding: 30px 0 0 20px;
-    color: #909399;
+    color: $grey;
     line-height: 30px;
     font-size: 13px;
   }
@@ -74,18 +74,18 @@ export default {
       &.is-active {
         border-right: 2px solid;
         i {
-          color: #409eff;
+          color: $blue;
         }
       }
       i {
-        color: #606266;
+        color: $text-2;
       }
     }
   }
 }
 @media (max-width: 768px) {
   .menu-wrap {
-    width: 63px;
+    width: $media-menu-width;
     .el-submenu__title span {
       display: none;
     }

@@ -24,10 +24,10 @@ export default {
   height: 100%;
   .content-wrap {
     position: fixed;
-    left: 210px;
+    left: $menu-width;
     top: 61px;
     bottom: 0;
-    width: calc(100% - 210px);
+    @include content-width;
     overflow-x: hidden;
     .content {
       padding: 25px;
@@ -39,8 +39,8 @@ export default {
 @media (max-width: 768px) {
   .main-wrap {
     .content-wrap {
-      left: 63px;
-      width: calc(100% - 63px);
+      left: $media-menu-width;
+      @include media-content-width;
     }
   }
 }

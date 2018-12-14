@@ -34,7 +34,11 @@ const endFullScreenLoading = () => {
 axios.defaults.timeout = 5000
 axios.defaults.headers.post['Content-Type'] =
   'application/x-www-form-urlencoded;charset=UTF-8'
-axios.defaults.baseURL = 'http://localhost:8080'
+//协议
+let protocol = window.location.protocol
+//主机
+let host = window.location.host
+axios.defaults.baseURL = protocol + '//' + host
 
 // POST传参序列化
 axios.interceptors.request.use(

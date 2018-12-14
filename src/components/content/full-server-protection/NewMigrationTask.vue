@@ -568,7 +568,7 @@ export default {
     &,
     &:focus,
     &:hover {
-      border-color: #f56c6c;
+      border-color: $red;
     }
   }
 }

@@ -852,11 +852,11 @@ export default {
     &:hover {
       background: #a58fe2;
       border-color: #a58fe2;
-      color: #fff;
+      color: $white;
     }
     &,
     &:active {
-      color: #fff;
+      color: $white;
       background: #8f75da;
       border-color: #8f75da;
       outline: 0;

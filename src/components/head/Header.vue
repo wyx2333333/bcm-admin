@@ -3,7 +3,7 @@
     <el-container class="container">
       <el-aside width="210px">
         <div class="head-logo">
-          <img src="img/logo.png">
+          <img src="~img/logo.png">
         </div>
       </el-aside>
       <el-main>
@@ -11,7 +11,7 @@
           <span class="menu-font">{{ selectedMenu }}</span>
         </div>
         <div class="head-icon">
-          <img src="img/avatar.png">
+          <img src="~img/avatar.png">
         </div>
         <div class="head-icon">
           <el-tooltip class="item"
@@ -75,17 +75,17 @@ export default {
 </script>
 <style lang="scss">
 .head-wrap {
-  height: 60px;
+  height: $head-height;
   width: 100%;
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   z-index: 1000;
-  background-color: #f2f6fc;
-  border-bottom: 1px solid #dcdfe6;
+  background-color: $border-4;
+  border-bottom: 1px solid $border-1;
   .container {
-    height: 60px;
+    height: $head-height;
     .el-aside {
       overflow: hidden;
     }
@@ -103,7 +103,7 @@ export default {
     .el-main {
       padding: 0;
       overflow: hidden;
-      line-height: 60px;
+      line-height: $head-height;
       .head-icon {
         float: right;
         margin-right: 20px;
@@ -138,7 +138,7 @@ export default {
         .head-icon {
           float: left;
           i {
-            color: #fff;
+            color: $white;
           }
         }
       }

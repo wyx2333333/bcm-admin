@@ -1,0 +1,17 @@
+@mixin flex($item: center, $content: center) {
+  display: flex;
+  align-items: $item;
+  justify-content: $content;
+}
+
+@mixin transition($time: 0.2s) {
+  transition: all $time ease;
+}
+
+@mixin content-width() {
+  width: calc(100% - 210px);
+}
+
+@mixin media-content-width() {
+  width: calc(100% - 63px);
+}
