@@ -69,8 +69,8 @@ export default {
       })
     }
   },
-  created() {},
-  mounted() {}
+  created() { },
+  mounted() { }
 }
 </script>
 <style lang="scss">
@@ -90,8 +90,9 @@ export default {
       overflow: hidden;
     }
     .head-logo img {
-      height: 40px;
-      margin: 10px 20px;
+      width: 130px;
+      height: 24px;
+      margin: 18px 40px;
     }
     .head-title {
       padding: 0 20px;
