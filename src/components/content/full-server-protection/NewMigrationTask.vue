@@ -520,7 +520,7 @@ export default {
         })
         .catch(error => {
           this.isLoading = false
-          console.log(error)
+          console.error(error)
         })
     },
     /* 校验表单 */
@@ -536,8 +536,8 @@ export default {
       })
     }
   },
-  created() {},
-  mounted() {}
+  created() { },
+  mounted() { }
 }
 </script>
 <style lang="scss">

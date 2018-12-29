@@ -14,6 +14,7 @@
 
 <script>
 import menuTree from 'components/menu/MenuTree'
+import menuConfig from 'components/menu/menuConfig'
 export default {
   components: { menuTree },
   data() {
@@ -23,21 +24,11 @@ export default {
     }
   },
   mounted() {
-    this.getMenuDate()
+    this.menuData = menuConfig.MENU_DATA
     window.addEventListener('resize', this.handleResize)
     this.handleResize()
   },
   methods: {
-    getMenuDate() {
-      this.$service
-        .getMenuData()
-        .then(result => {
-          this.menuData = result.MENU_DATA
-        })
-        .catch(reason => {
-          console.error(reason)
-        })
-    },
     handleResize() {
       document.body.clientWidth < 768
         ? (this.isCollapse = true)

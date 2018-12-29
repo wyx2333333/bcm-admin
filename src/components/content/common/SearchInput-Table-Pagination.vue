@@ -18,7 +18,7 @@
       </el-input>
     </div>
     <el-table :ref="tableParam.refName"
-              :data="tableParam.table_data.slice((paginationParam.currentPage - 1) * paginationParam.pageSize, paginationParam.currentPage * paginationParam.pageSize)"
+              :data="getTabelData()"
               tooltip-effect="dark"
               style="width: 100%"
               header-cell-class-name="header-cell"
@@ -75,6 +75,15 @@ export default {
   },
   data() {
     return {
+      getTabelData() {
+        if (this.tableParam.table_data) {
+          return this.tableParam.table_data.slice(
+            (this.paginationParam.currentPage - 1) *
+            this.paginationParam.pageSize,
+            this.paginationParam.currentPage * this.paginationParam.pageSize
+          )
+        }
+      },
       getRowKey(row) {
         return row.id
       },
@@ -88,7 +97,7 @@ export default {
     }
   },
   watch: {
-    'searchParam.searchContent': function(val, oldVal) {
+    'searchParam.searchContent': function (val, oldVal) {
       this.tableParam.table_data = this.tableParam.table_data_copy.filter(
         item =>
           ~item[this.searchParam.searchLabel]
@@ -104,7 +113,7 @@ export default {
       this.$emit('tableRowClassName', { row, rowIndex })
     },
     /* 勾选checkbox */
-    handleSelectionChange: function(rows) {
+    handleSelectionChange: function (rows) {
       this.tableParam.multipleSelection = rows
     },
     btnOperate(operatBtn, index, row) {
@@ -125,7 +134,7 @@ export default {
   margin: 0 20px 20px;
   .el-select {
     .el-input {
-      width: 90px;
+      width: 150px;
       input {
         text-align: center;
       }
@@ -141,7 +150,7 @@ export default {
   }
 }
 .header-cell {
-  font-family: 'menufont' !important;
+  font-family: "menufont" !important;
   font-weight: 400;
   font-size: 15px;
 }

@@ -2,16 +2,6 @@
 
 import Vue from 'vue'
 import Router from 'vue-router'
-import Login from 'views/Login'
-import Main from 'views/Main'
-import UserManage from 'components/content/system-manage/UserManage'
-import NodeManage from 'components/content/system-manage/NodeManage'
-import CopyManage from 'components/content/copy-manage/CopyManage'
-import ClusterManage from 'components/content/cluster-manage/ClusterManage'
-import RecoveryManage from 'components/content/recovery-manage/RecoveryManage'
-import FullServerMigration from 'components/content/full-server-protection/FullServerMigration'
-import Tools from 'components/content/tool/Tools'
-import Logs from 'components/content/log/Logs'
 
 Vue.use(Router)
 const router = new Router({
@@ -27,11 +17,11 @@ const router = new Router({
     },
     {
       path: '/login',
-      component: Login
+      component: () => import('views/Login')
     },
     {
       path: '/main',
-      component: Main,
+      component: () => import('views/Main'),
       meta: {
         requiresLogin: true
       },
@@ -39,42 +29,29 @@ const router = new Router({
         {
           name: '用户管理',
           path: 'system/user',
-          component: UserManage
+          component: () => import('components/content/system-manage/UserManage')
         },
         {
           name: '节点管理',
           path: 'system/node',
-          component: NodeManage
+          component: () => import('components/content/system-manage/NodeManage')
         },
         {
           name: '复制管理',
           path: 'copy',
-          component: CopyManage
-        },
-        {
-          name: '集群管理',
-          path: 'cluster',
-          component: ClusterManage
+          component: () => import('components/content/copy-manage/CopyManage')
         },
         {
           name: '恢复管理',
           path: 'recovery',
-          component: RecoveryManage
+          component: () =>
+            import('components/content/recovery-manage/RecoveryManage')
         },
         {
-          name: '全服务器迁移',
+          name: '迁移管理',
           path: 'protection/migration',
-          component: FullServerMigration
-        },
-        {
-          name: '实用工具',
-          path: 'tool',
-          component: Tools
-        },
-        {
-          name: '日志管理',
-          path: 'log',
-          component: Logs
+          component: () =>
+            import('components/content/full-server-protection/FullServerMigration')
         }
       ]
     }

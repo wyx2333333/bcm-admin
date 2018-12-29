@@ -278,7 +278,7 @@ export default {
         })
         .catch(error => {
           this.isLoading = false
-          console.log(error)
+          console.error(error)
         })
     },
     /* 校验表单 */
@@ -297,9 +297,7 @@ export default {
     backToTasks() {
       this.$emit('back')
     }
-  },
-  created() {},
-  mounted() {}
+  }
 }
 </script>
 <style lang="scss">
